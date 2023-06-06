@@ -13,15 +13,17 @@
 <body>
 
   <!-- Sign-up form start -->
+
+  <main>
   
     <figure>
-      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+      <img id="mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+      <img id="desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
     </figure>
   
 
-    <main>
-
-    <header><h1>Stay updated!</h1></header>
+    <section class="content">
+      <header><h1>Stay updated!</h1></header>
 
     <article>
       <p>Join 60,000+ product managers receiving monthly updates on:</p> 
@@ -42,10 +44,20 @@
     
 
     <article>
-      <label for="email">Email address</label>
-      <input type="email" id="email" name="email" placeholder="email@company.com">
-     <button>Subscribe to monthly newsletter</button> 
+      <form id="email-form" name="form1" action="#">
+          <section class="label">
+            <label id="email-input" class="email-label" for="email">Email address</label>
+            <label id=error-alert class="email-label" for="email">Valid Email Required</label>
+          </section>
+        
+      <input type="email" id="email-field" name="email" placeholder="email@company.com">
+      <input id="submit-btn" type="submit" value="Subscribe to monthly newsletter" name="validate" onclick="ValidateEmail(document.form1.email)">
+      </form>
+      
     </article>
+    </section>
+
+    
 
   </main>   
 
@@ -55,19 +67,19 @@
 
   <!-- Success message start -->
 
-  <!-- <section>
+  <section>
 
     <article id="success-subscribing">
       <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
    <h1>Thanks for subscribing!</h1> 
     
-   <p>A confirmation email has been sent to ash@loremcompany.com. 
+   <p>A confirmatizon email has been sent to <span id="email-message">ash@loremcompany.com.</span>  
     Please open it and click the button inside to confirm your subscription.</p> 
   
    <button>Dismiss message</button>
     </article>
      
-  </section> -->
+  </section>
 
   <!-- Success message end -->
   
