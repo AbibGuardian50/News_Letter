@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-tomato : hsl(4, 100%, 67%);
+
+    --Neutral-Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Neutral-Charcoal-Grey: hsl(235, 18%, 26%);
+    --Neutral-Grey: hsl(231, 7%, 60%);
+    --Neutral-White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    background: var(--Neutral-Charcoal-Grey);
+    color: var(--Neutral-White);
+    padding: 1rem;
+    width: 95%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.checklist {
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.list-product {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+.success-icon {
+    width: 6%;
+}
+
+main {
+    padding-left: 1rem;
+}
