@@ -9,9 +9,10 @@ let success =  document.getElementById('success-subscribing');
 let errorAlert = document.getElementById('error-alert');
 let emailMsg = document.getElementById("email-message");
 let emailInput = document.getElementById("email-field");
+let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
 function ValidateEmail(inputText) {
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  
     if (inputText.value.match(mailformat)) {
         main.style.display = 'none';
         success.style.display = 'block';
