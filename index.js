@@ -28,7 +28,7 @@ function ValidateEmail(inputText) {
     }
 }
 
-function dismiss() {
-    main.style.display = 'block';
+function Dismiss() {
+    main.style.display = 'flex';
     success_icon.style.display = 'none';
 }
