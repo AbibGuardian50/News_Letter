@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
 </head>
+
 <body>
 
   <!-- Sign-up form start -->
 
   <main>
-  
+
     <figure>
       <img id="mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
       <img id="desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
     </figure>
-  
+
 
     <section class="content">
-      <header><h1>Stay updated!</h1></header>
+      <header>
+        <h1>Stay updated!</h1>
+      </header>
 
-    <article>
-      <p>Join 60,000+ product managers receiving monthly updates on:</p> 
+      <article>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
-      <section class="checklist">
-        <article class="list-product">
-          <img class="success-icon" src="./assets/images/icon-success.svg" alt=""> <p>Product discovery and building what matters</p> 
-        </article>
-        <article class="list-product">
-          <img class="success-icon" src="./assets/images/icon-success.svg" alt=""> <p>Measuring to ensure updates are a success</p>
-        </article>
-        <article class="list-product">
-          <img class="success-icon" src="./assets/images/icon-success.svg" alt=""><p>And much more!</p>
-        </article>
-        
-      </section>
-    
-    
+        <section class="checklist">
+          <article class="list-product">
+            <img class="success-icon" src="./assets/images/icon-success.svg" alt="">
+            <p>Product discovery and building what matters</p>
+          </article>
+          <article class="list-product">
+            <img class="success-icon" src="./assets/images/icon-success.svg" alt="">
+            <p>Measuring to ensure updates are a success</p>
+          </article>
+          <article class="list-product">
+            <img class="success-icon" src="./assets/images/icon-success.svg" alt="">
+            <p>And much more!</p>
+          </article>
 
-    <article>
-      <form id="email-form" name="form1" action="#">
-          <section class="label">
-            <label id="email-input" class="email-label" for="email">Email address</label>
-            <label id=error-alert class="email-label" for="email">Valid Email Required</label>
-          </section>
-        
-      <input type="email" id="email-field" name="email" placeholder="email@company.com">
-      <input id="submit-btn" type="submit" value="Subscribe to monthly newsletter" name="validate" onclick="ValidateEmail(document.form1.email)">
-      </form>
-      
-    </article>
+        </section>
+
+
+
+        <article>
+          <form id="email-form" name="form1" action="#">
+            <section class="label">
+              <label id="email-input" class="email-label" for="email">Email address</label>
+              <label id=error-alert class="email-label" for="email">Valid Email Required</label>
+            </section>
+
+            <input type="email" id="email-field" name="email" placeholder="email@company.com">
+            <input id="submit-btn" type="submit" value="Subscribe to monthly newsletter" name="validate"
+              onclick="ValidateEmail(document.form1.email)">
+          </form>
+
+        </article>
     </section>
 
-    
 
-  </main>   
+
+  </main>
 
   </div>
 
@@ -67,22 +76,22 @@
 
   <!-- Success message start -->
 
-  <section>
+  <section id="success-icon-subscribing">
+    <img id="icon-subs" src="./assets/images/icon-success.svg" alt="">
+    <article>
 
-    <article id="success-subscribing">
-      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
-   <h1>Thanks for subscribing!</h1> 
-    
-   <p>A confirmatizon email has been sent to <span id="email-message">ash@loremcompany.com.</span>  
-    Please open it and click the button inside to confirm your subscription.</p> 
-  
-   <button>Dismiss message</button>
+      <h1>Thanks for subscribing!</h1>
+
+      <p>A confirmatizon email has been sent to <span id="email-message">ash@loremcompany.com.</span>
+        Please open it and click the button inside to confirm your subscription.</p>
+
+      <a href="#"><button id="dismiss-btn">Dismiss message</button></a onclick="dismiss()">
     </article>
-     
+
   </section>
 
   <!-- Success message end -->
-  
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
@@ -90,4 +99,5 @@
 
   <script src="index.js"></script>
 </body>
+
 </html>
