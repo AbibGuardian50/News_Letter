@@ -103,6 +103,12 @@ p {
     padding-bottom: 1.25rem;
 }
 
+section.label > #error-alert{
+    padding-right: 1.5rem;
+    color: var(--primary-tomato);
+    display: none;
+}
+
 .list-product {
     display: flex;
     flex-wrap: nowrap;
@@ -141,7 +147,10 @@ p {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
-        
+    }
+
+    #dismiss-btn {
+        margin-top: 1.5rem;
     }
 
     h1 {
@@ -151,12 +160,6 @@ p {
     section.label {
         display: flex;
         justify-content: space-between;
-    }
-
-    section.label > #error-alert{
-        padding-right: 1.5rem;
-        color: var(--primary-tomato);
-        display: none;
     }
 
     #success-icon-subscribing {
