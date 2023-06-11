@@ -128,10 +128,6 @@ section.label>#error-alert {
 }
 
 @media only screen and (min-width: 768px) {
-    body {
-        background: var(--Neutral-Charcoal-Grey)
-    }
-
     .content {
         padding: 0;
         display: flex;
