@@ -1,9 +1,3 @@
-// function displaymessage() {
-//     let userinput = [];
-//     document.getElementById('success-subscribing');
-
-// }
-
 let main = document.querySelector('main');
 let success =  document.getElementById('success-subscribing');
 let errorAlert = document.getElementById('error-alert');
@@ -17,7 +11,6 @@ function ValidateEmail(inputText) {
     
     if (inputText.value.match(mailformat)) {
         main.style.display = 'none';
-        // success.style.display = 'flex';
         success_icon.style.display = 'flex';
         emailMsg.textContent = emailInput.value;
     }

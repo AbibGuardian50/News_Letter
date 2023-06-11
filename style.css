@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-tomato : hsl(4, 100%, 67%);
+    --primary-tomato: hsl(4, 100%, 67%);
 
     --Neutral-Dark-Slate-Grey: hsl(234, 29%, 20%);
     --Neutral-Charcoal-Grey: hsl(235, 18%, 26%);
@@ -23,7 +23,8 @@
     width: 10%;
 }
 
-#success-subscribing, #success-icon-subscribing {
+#success-subscribing,
+#success-icon-subscribing {
     display: none;
 }
 
@@ -44,7 +45,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#submit-btn, #dismiss-btn {
+#submit-btn,
+#dismiss-btn {
     background: var(--Neutral-Charcoal-Grey);
     color: var(--Neutral-White);
     padding: 1rem;
@@ -57,15 +59,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-#submit-btn:hover, #dismiss-btn:hover {
+#submit-btn:hover,
+#dismiss-btn:hover {
     background: var(--primary-tomato);
 }
 
-figure > img#mobile-img {
+picture>img#mobile-img {
     width: 100%;
 }
 
-figure > img#desktop-img {
+figure>img#desktop-img {
     display: none;
 }
 
@@ -103,7 +106,7 @@ p {
     padding-bottom: 1.25rem;
 }
 
-section.label > #error-alert{
+section.label>#error-alert {
     padding-right: 1.5rem;
     color: var(--primary-tomato);
     display: none;
@@ -125,28 +128,33 @@ section.label > #error-alert{
 }
 
 @media only screen and (min-width: 768px) {
-    /* body {
-        height: 100vh;
-    } */
+    body {
+        background: var(--Neutral-Charcoal-Grey)
+    }
+
     .content {
         padding: 0;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
-    figure > img#mobile-img {
+
+    figure>img#mobile-img {
         display: none;
     }
 
-    figure > img#desktop-img {
+    figure>img#desktop-img {
         display: block;
         padding-top: 1rem;
     }
+
     main {
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
+        min-height: 100vh;
+        background: var(--Neutral-White);
     }
 
     #dismiss-btn {

@@ -19,10 +19,11 @@
 
   <main>
 
-    <figure>
+    <picture>
+      <source id="desktop-img" media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg"
+        alt="illustration-sign-up-desktop">
       <img id="mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
-      <img id="desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
-    </figure>
+    </picture>
 
 
     <section class="content">
@@ -49,8 +50,6 @@
 
         </section>
 
-
-
         <article>
           <form id="email-form" name="form1" action="#">
             <section class="label">
@@ -65,8 +64,6 @@
 
         </article>
     </section>
-
-
 
   </main>
 
@@ -85,18 +82,10 @@
       <p>A confirmatizon email has been sent to <span id="email-message">ash@loremcompany.com.</span>
         Please open it and click the button inside to confirm your subscription.</p>
 
-        <input type="button" id="dismiss-btn" value="Dismiss message" onclick="Dismiss()">
+      <input type="button" id="dismiss-btn" value="Dismiss message" onclick="Dismiss()">
     </article>
 
   </section>
-
-  <!-- Success message end -->
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
-
   <script src="index.js"></script>
 </body>
 
