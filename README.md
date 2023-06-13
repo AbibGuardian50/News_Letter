@@ -31,7 +31,7 @@ Users should be able to:
 
 ![](./Desktop.png)
 ![](./Desktop%20(2).png)
-![](./mobile.png)
+![](./Mobile.png)
 
 ### Links
 
